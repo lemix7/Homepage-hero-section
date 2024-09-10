@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="h-screen">
+<body class="h-screen dark:bg-slate-900" >
 
     <nav  class=" py-6 px-6 flex w-full justify-between md:px-8 lg:px-16">
 
@@ -17,60 +17,71 @@
 
         <div class="hidden gap-8 lg:flex md:flex">
 
-            <a class="lg:text-xl  text-slate-500 hover:text-slate-800 capitalize" href="#">about us</a>
-            <a class="lg:text-xl  text-slate-500 hover:text-slate-800 capitalize" href="#">product</a>
-            <a class="lg:text-xl  text-slate-500 hover:text-slate-800 capitalize" href="#">resource</a>
-            <a class="lg:text-xl  text-slate-500 hover:text-slate-800 capitalize" href="#">contact</a>
+            <a class="lg:text-xl dark:hover:text-slate-300 text-slate-500 hover:text-slate-800 capitalize" href="#">about us</a>
+            <a class="lg:text-xl dark:hover:text-slate-300 text-slate-500 hover:text-slate-800 capitalize" href="#">product</a>
+            <a class="lg:text-xl dark:hover:text-slate-300 text-slate-500 hover:text-slate-800 capitalize" href="#">resource</a>
+            <a class="lg:text-xl dark:hover:text-slate-300 text-slate-500 hover:text-slate-800 capitalize" href="#">contact</a>
 
         </div>
 
         <div class="hidden lg:block md:block">
-            <img src="img/Sun_fill.svg" alt="">
+            <img class="cursor-pointer " src="img/Moon_fill.svg" alt="">
         </div>
 
-        <img class=" lg:hidden md:hidden" src="img/Menu Icon.svg" alt="">
+        <img id="menu" class="  cursor-pointer lg:hidden md:hidden" src="img/Menu Icon.svg" alt="">
 
 
     </nav>
 
     <!-- side NavBar -->
 
-    <div class=" absolute top-0 right-0 py-12 px-12 md:py-24 md:px-40  items-center hidden h-screen side-nav flex flex-col gap-20 lg:hidden">
+    <div id="menu-items" class=" bg-white hidden   absolute top-0 right-0 py-12 px-12 md:py-24 md:px-40  items-center md:hidden h-screen side-nav flex flex-col gap-20 lg:hidden">
+
+        <div class=" w-full  text-right close"><button id="close-btn" class=" text-2xl font-bold ">X</button></div>
         <a class="text-4xl text-slate-500  hover:text-slate-800 capitalize" href="#">about us</a>
         <a class="text-4xl text-slate-500  hover:text-slate-800 capitalize" href="#">product</a>
         <a class="text-4xl text-slate-500  hover:text-slate-800 capitalize" href="#">resource</a>
         <a class="text-4xl text-slate-500  hover:text-slate-800 capitalize" href="#">contact</a>
+
     </div>
 
     <!-- Hero Section -->
 
-    <main class="flex flex-col justify-center items-center lg:flex-row lg:order-1 gap-28 mt-14 lg:gap-2 lg:mt-1">
+    <main class="flex flex-col justify-center items-center lg:flex-row lg:order-1 gap-28 mt-14 lg:gap-2 lg:mt-5">
 
-        <div class="hero-text order-2 px-9 flex flex-col gap-6 lg:pl-16 ">
+        <div class="hero-text order-2 px-9 flex flex-col gap-6 lg:pl-16 lg:gap-3">
 
-            <p class="uppercase font-semibold text-xs lg:text-base md:text-sm">😎 simple way to communicate</p>
-            <h1 class="text-5xl font-bold leading-snug lg:text-7xl lg:leading-normal md:text-6xl">Actions for Accessibility in Design</h1>
+            <p class="uppercase font-semibold text-xs lg:text-base md:text-sm dark:text-white">😎 simple way to communicate</p>
+
+            <h1 class="text-5xl font-bold leading-snug lg:text-7xl lg:leading-normal md:text-6xl dark:text-white">Actions for Accessibility in Design</h1>
+
             <p class="text-slate-500 lg:text-2xl md:text-xl">The fastest way to build and deploy websites with resusable components</p>
 
-            <div class="btns flex gap-8 items-center lg:mb-9">
+            <div class="btns flex gap-8 items-center lg:mb-9 lg:mt-5">
 
                 <button class="bg-blue-700 py-3 px-6 rounded-lg text-white uppercase font-medium lg:py-4 lg:px-7 lg:text-xl">get started</button>
 
                 <a class="text-blue-700 hover:text-blue-500 underline font-medium lg:text-xl md:text-base " href="#">Get live demo</a>
+
             </div>
 
             <div class="features flex gap-6 items-center mb-11">
 
-                <p class="flex text-xs text-slate-500 gap-2 lg:text-xl "> <img class="aspect-square w-6" src="img/Done_ring_round_fill.svg" alt="">No credit card required</p>
-                <p class="flex text-xs text-slate-500 gap-2 lg:text-xl"> <img class="aspect-auto w-6" src="img/Done_ring_round_fill.svg" alt="">No software to install</p>
+                <p class="flex text-xs text-slate-500 gap-2 justify-center items-center lg:text-xl "> <img class="aspect-square w-6" src="img/Done_ring_round_fill.svg" alt="">No credit card required</p>
+
+                <p class="flex text-xs text-slate-500 gap-2 items-center lg:text-xl"> <img class="aspect-auto w-6" src="img/Done_ring_round_fill.svg" alt="">No software to install</p>
 
             </div>
 
         </div>
 
         <div class="hero-img order-1 lg:order-2 px-9">
+
             <img class=" " src="img/hero-image-simple-homepage.png" alt="">
+
         </div>
+
+
     </main>
 
 

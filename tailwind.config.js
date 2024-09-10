@@ -7,8 +7,13 @@ module.exports = {
       colors:{
         
       }
+      ,
+      display:{
+        hid:hidden,
+      }
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
 
